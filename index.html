@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <nav>
         <!-- Add links or navigation -->
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experiences">Experiences</a>
-        <a href="#contact">Contact</a>
+        <div>
+          <a class="nav_link" href="#about">About</a>
+          <a class="nav_link" href="#skills">Skills</a>
+          <a class="nav_link" href="#experiences">Experiences</a>
+          <a class="nav_link" href="#contact">Contact</a>
+        </div>
       </nav>
     </header>
     <Main>
-      <img src="https://i.ibb.co/KbbVxsN/ME.png" alt="Nikita's photo">
+      <div id="profil_pic_section">
+        <img id="profil_pic" src="https://i.ibb.co/KbbVxsN/ME.png" alt="Nikita's photo">
+        <div id="profil_pic_section_bg"></div>
+      </div>
       <h1><strong>Nikita Lambert</strong></h1>
-      <h2>3D Integration Specialist</h2>
-      <h2>&</h2>
       <h2>Product Owner</h2>
-      <a href="C:/Users/Nikit/OneDrive/!ETUDES/Lighthouse/LH projects/Nikita_Lambert_CV_Autodesk.pdf"><em>Download CV</em></a>
+      <div id="download_row">
+        <form method="GET" action="C:/Users/Nikit/OneDrive/!ETUDES/Lighthouse/LH_projects/Nikita_Lambert_CV_Autodesk.pdf" target="_blank">
+          <input class="button" type="submit" value="Download CV">
+        </form>
+      </div>
+      </div>
       <section id="about">
         <h2><strong>About</strong></h2>
-        <h3><em>Subtitle</em></h3>
-        <p>
+        <p class="about_content">
           I am a certified Product Owner and 3D Integration Specialist looking for more than a job. I have a strong desire to invest myself in an organization with a continuous improvement culture, with which I can sharing my knowledge, passion for technologies and my resourcefulness. I am looking for an organization that values innovation and excellence over comfort and status quo.
         </p>
       </section>
       <section id="skills">
         <h2><strong>Skills</strong></h2>
-        <h3><em>Subtitle</em></h3>
-        <img src="https://i.ibb.co/gy7gkb5/Skill-Section.png" alt="Skill Section">
+        <div id="skill_img">
+          <img src="https://i.ibb.co/gy7gkb5/Skill-Section.png" alt="Skill Section">
+        </div>
       </section>
       <section id="experiences">
         <h2><strong>Experiences</strong></h2>
         <h3>Product Owner | Visao Technologies | <em>05-2021 up to now</em></h3>
-        <p>Key Achievements</p>
-        <ul>
+        <p class="experiences_content">Key Achievements</p>
+        <ul class="experiences_content">
           <li>Instrumental in the increase of the number of customers from 2 to 13 companies</li>
           <li>Developed and executed a competitive differentiation strategy based on user experience and domain knowledge</li>
           <li>Led the release to production of a new UI, product configurator, and the first version of the API in less than 12 month</li>
         </ul>
-        <p>Day-to-day Activities:</p>
-        <ul>
+        <p id="Day-to-day_activities" class="experiences_content">Day-to-day Activities:</p>
+        <ul class="experiences_content">
           <li>Create, adjust and communicate the Product Vision</li>
           <li>Establish, update and make the Product Roadmap visible</li>
           <li>Collaborate with internal stakeholders and Visao's clients to prioritize new features & improvements</li>
@@ -51,35 +63,49 @@
           <li>Manage the Product Backlog (prioritization, refinement, documentation, etc.)</li>
         </ul>
           <h3>3D Integration Specialist | Visao Technologies | <em>12-2020 up to now</em></h3>
-          <p>Communicate with customers to understand their needs in order to :</p>
-          <ul>
+          <p class="experiences_content">Communicate with customers to understand their needs in order to :</p>
+          <ul class="experiences_content">
             <li>Optimize their 3D CAD models</li>
             <li>Create materials</li>
             <li>Create animations for parts and assemblies</li>
             <li>Export a 3D file to be used by Visao’s platform to create an interactive web 3D viewer</li>
           </ul>
-          <p>Demonstrate the technology and help sell the solution through multiple customer demo stages. Showcase how the solution will help solve the customers’ problems.</p>
+          <p class="experiences_content">Demonstrate the technology and help sell the solution through multiple customer demo stages. Showcase how the solution will help solve the customers’ problems.</p>
       </section>
       <section>
-        <iframe
-          src="https://demo.visao.ca/viewer/IBs7V01sRQq47z7GjhHS9Q"
-          frameborder="0"
-          style="width: 800px; height: 600px"
-          allow="autoplay; fullscreen;"
-          allowtransparency="true"
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-        ></iframe>
+        <div class="sketchfab-embed-wrapper">
+          <iframe
+            title="Poe's X-Wing Lego"
+            width="960px" height="600px"
+            frameborder="0"
+            allowfullscreen mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            xr-spatial-tracking
+            execution-while-out-of-viewport
+            execution-while-not-rendered
+            web-share
+            src="https://sketchfab.com/models/7e6feeac0bc948e8bbebe8394a8d8461/embed">
+          </iframe>
+        </div>
       </section>
     </main>
     <footer id="contact">
-      <h2><strong>Contact</strong></h2>
-      <h3>Email adress: </h3>
-      <a href="mailto:NikitaLambert@outlook.com">NikitaLambert@outlook.com</a>
-      <h3>LinkedIn: </h3>
-      <a href="https://www.linkedin.com/in/nikita-lambert">linkedin.com/in/nikita-lambert</a>
-      <h3>Phone: </h3>
-      <a href="tel:5142456448">(514) 245-6448</a>
+      <div id="contact_layout">
+        <div class="contact_content">
+          <p>Email adress: </p>
+          <a href="mailto:NikitaLambert@outlook.com">NikitaLambert@outlook.com</a>
+        </div>
+        <div class="contact_content">
+          <p>LinkedIn: </p>
+          <a href="https://www.linkedin.com/in/nikita-lambert">linkedin.com/in/nikita-lambert</a>
+        </div>
+        <div class="contact_content">
+          <p>Phone: </p>
+          <a href="tel:5142456448">(514) 245-6448</a>
+        </div>
+      </div>
+      <div id=#end_line></div>
     </footer>
   </body>
 </html>

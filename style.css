@@ -1,0 +1,143 @@
+nav {
+  padding: 20px 0px 20px 0px;
+  background: linear-gradient(90deg, #1A0F5E, #0B043A);
+  text-align: right;
+}
+nav div {
+  margin: 0 15%;
+}
+.nav_link {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.75rem;
+  color: #ffffff;
+  padding-right: 15px;
+  text-decoration: none;
+}
+.nav_link:hover {
+  font-weight: bold;
+}
+#profil_pic_section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+}
+#profil_pic_section_bg {
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  top: 175px;
+  background: linear-gradient(90deg, #FDE70A, #FA2352);
+  z-index: -1
+}
+#profil_pic {
+  object-fit: cover;
+  width:500px;
+  height:500px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 6px;
+  border-color: #000000;
+}
+#download_row { */
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+form {
+  margin: 0 auto;
+  text-align: center;
+}
+.button {
+  width: 175px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 3px solid #323232;
+  border-radius: 8px;
+  font-size: 1.25rem;
+}
+.button:hover {
+  background-color: #FA2352;
+  border: 3px solid #323232;
+  font-weight: bold;
+  color: #ffffff;
+}
+h1, h2, h3 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+h1, h2, h3 {
+  color: #000000;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2.25rem;
+}
+h3{
+  font-size: 2rem;
+}
+p, li {
+  color: #323232;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+ul {
+  list-style-type: circle;
+  margin: 0;
+  padding: 5px 0 15px 25px;
+}
+#about, #skills, #experiences {
+  padding-top: 50px;
+}
+#skill_img, .sketchfab-embed-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.about_content {
+  margin: 0 19%;
+  text-align: center;
+}
+.experiences_content {
+  margin: 0 21%;
+  text-align: left;
+}
+#contact_layout {
+  margin: 0 auto;
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 25px;
+}
+.contact_content {
+  text-align: center;
+}
+footer {
+  padding: 1px 0;
+  background: linear-gradient(90deg, #1A0F5E, #0B043A);
+}
+footer h2 {
+  color: #ffffff;
+}
+footer p {
+  color: #ffffff;
+}
+footer a {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
