@@ -1,4 +1,6 @@
-nav {
+.menu {
+  display: flex;
+  justify-content: flex-end;
   padding: 20px 0px 20px 0px;
   background: linear-gradient(90deg, #1A0F5E, #0B043A);
   text-align: right;
@@ -19,17 +21,15 @@ nav div {
   font-weight: bold;
 }
 #profil_pic_section {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
-  padding: 0px 0px 0px 0px;
-  position: relative;
+  align-items: center;
+  margin-top: 50px;
 }
 #profil_pic_section_bg {
   height: 150px;
   width: 100%;
   position: absolute;
-  top: 175px;
   background: linear-gradient(90deg, #FDE70A, #FA2352);
   z-index: -1
 }
@@ -43,13 +43,9 @@ nav div {
   border-color: #000000;
 }
 #download_row { */
-  display: flex;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
-}
-form {
-  margin: 0 auto;
   text-align: center;
 }
 .button {
@@ -71,13 +67,7 @@ h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
-}
-h1, h2, h3 {
   color: #000000;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
 }
 h1{
   font-size: 2.5rem;
@@ -97,10 +87,13 @@ p, li {
 }
 ul {
   list-style-type: circle;
-  margin: 0;
   padding: 5px 0 15px 25px;
 }
-#about, #skills, #experiences {
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 50px;
 }
 #skill_img, .sketchfab-embed-wrapper {
@@ -108,21 +101,30 @@ ul {
   justify-content: center;
 }
 .about_content {
-  margin: 0 19%;
+  margin: 0 auto;
+  width: 50%;
+  max-width: 875px;
+  min-width: 500px;
   text-align: center;
 }
 .experiences_content {
-  margin: 0 21%;
+  margin: 0 auto;
+  width: 50%;
+  max-width: 875px;
+  min-width: 500px;
   text-align: left;
 }
+
 #contact_layout {
   margin: 0 auto;
-  width: 900px;
+  width: 70%;
+  max-width: 900px;
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 25px;
 }
 .contact_content {
+  padding: 0 10px;
   text-align: center;
 }
 footer {
