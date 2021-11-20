@@ -1,13 +1,19 @@
 .menu {
   display: flex;
   justify-content: flex-end;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px;
   background: linear-gradient(90deg, #1A0F5E, #0B043A);
   text-align: right;
 }
 
 nav div {
   margin: 0 15%;
+}
+
+@media screen (max-width: 600px) {
+  nav div {
+    margin: 0 7px;
+  }
 }
 
 .nav_link {
